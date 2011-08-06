@@ -8,27 +8,27 @@ I have also noticed that the lein repl will only allow one colour (either fore o
 ## Usage
 The easiest usage is to create painters for your text
 ```clojure
-(def yellow-blue (create-painter yellow blue))
-(yellow-blue "Hello World")
+    (def yellow-blue (create-painter yellow blue))
+    (yellow-blue "Hello World")
 ```
 
 The following colours are avaliable:
-- black
-- red
-- green
-- yellow
-- blue
-- purple
-- cyan
-- lightgrey
-- darkgrey
-- boldred
-- boldgreen
-- boldyellow
-- boldblue
-- boldpurple
-- boldcyan
-- white
+* black
+* red
+* green
+* yellow
+* blue
+* purple
+* cyan
+* lightgrey
+* darkgrey
+* boldred
+* boldgreen
+* boldyellow
+* boldblue
+* boldpurple
+* boldcyan
+* white
 
 ## License
 
