@@ -12,22 +12,22 @@ The easiest usage is to create painters for your text
     (yellow-blue "Hello World")
 
 The following colours are avaliable:  
-* black
-* red
-* green
-* yellow
-* blue
-* purple
-* cyan
-* lightgrey
-* darkgrey
-* boldred
-* boldgreen
-* boldyellow
-* boldblue
-* boldpurple
-* boldcyan
-* white
+black
+red
+green
+yellow
+blue
+purple
+cyan
+lightgrey
+darkgrey
+boldred
+boldgreen
+boldyellow
+boldblue
+boldpurple
+boldcyan
+white
 
 ## License
 
