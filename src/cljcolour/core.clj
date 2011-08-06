@@ -19,7 +19,10 @@
 (def boldcyan {:fore "1;36" :back "1;46"})
 (def white {:fore "1;37" :back "1;47"})
 
-
+(defn create-new-colour
+	"Create a new colour from existing colours"
+	[{foreground :fore} {background :back}]
+	{:fore foreground :back background})
 
 (defn add-foreground-colour
 	"Add foreground colour to the string"
@@ -35,3 +38,10 @@
 	"Add foreground and background colours to a string"
 	[{foreground :fore} {background :back} text]
 	(str "\u001b[" background "m\u001b[" foreground "m" text "\u001b[m\u001b[m"))
+
+(defn create-painter
+	"Partially apply colours to the add-colour function"
+	([foreground background]
+	(partial add-colour foreground background))
+	([custom-colour]
+	(partial add-colour custom-colour custom-colour)))
